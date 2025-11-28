@@ -303,6 +303,14 @@ class Ahorcado_Biblico_ThirdWave {
                     </div>
                     
                     <div class="abtw-wizard-section">
+                        <h3>🎵 MÚSICA</h3>
+                        <label class="abtw-toggle">
+                            <input type="checkbox" id="abtw-music-toggle" checked>
+                            <span class="abtw-toggle-slider"></span>
+                        </label>
+                    </div>
+                    
+                    <div class="abtw-wizard-section">
                         <h3>🏆 RONDAS PARA GANAR</h3>
                         <input type="number" id="abtw-rounds" class="abtw-input" value="5" min="1" max="20">
                     </div>

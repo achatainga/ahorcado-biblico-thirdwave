@@ -7,6 +7,7 @@ class SoundManager {
         this.enabled = true;
         this.sounds = {};
         this.audioContext = null;
+        this.bgm = null;
     }
 
     init(enabled = true) {
@@ -97,6 +98,47 @@ class SoundManager {
         this.enabled = enabled;
         if (enabled && !this.audioContext) {
             this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        }
+    }
+
+    /**
+     * Initialize BGM
+     */
+    initBGM(url) {
+        if (!this.bgm) {
+            this.bgm = new Audio(url);
+            this.bgm.loop = true;
+            this.bgm.volume = 0.3;
+        }
+    }
+
+    /**
+     * Play BGM
+     */
+    playBGM() {
+        if (this.bgm) {
+            this.bgm.play().catch(e => console.log('BGM play error:', e));
+        }
+    }
+
+    /**
+     * Stop BGM
+     */
+    stopBGM() {
+        if (this.bgm) {
+            this.bgm.pause();
+            this.bgm.currentTime = 0;
+        }
+    }
+
+    /**
+     * Toggle BGM
+     */
+    toggleBGM(enabled) {
+        if (enabled) {
+            this.playBGM();
+        } else {
+            this.stopBGM();
         }
     }
 }

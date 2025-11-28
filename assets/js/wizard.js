@@ -11,6 +11,7 @@ class WizardManager {
             difficulty: 'normal',
             wordType: 'mezclado',
             soundEnabled: true,
+            musicEnabled: true,
             roundsToWin: 5,
             testWord: null,
             hangmanStyle: 'emoji'
@@ -116,6 +117,12 @@ class WizardManager {
             this.config.soundEnabled = e.target.checked;
             window.ABTWSoundManager.setEnabled(e.target.checked);
             if (e.target.checked) window.ABTWSoundManager.playClick();
+        });
+
+        // Music toggle
+        document.getElementById('abtw-music-toggle')?.addEventListener('change', (e) => {
+            this.config.musicEnabled = e.target.checked;
+            window.ABTWSoundManager.playClick();
         });
 
         // Rounds
@@ -241,6 +248,12 @@ class WizardManager {
 
         window.ABTWSoundManager.playVictory();
 
+        // Initialize BGM (user interaction required)
+        window.ABTWSoundManager.initBGM(ABTW.pluginUrl + 'assets/sounds/bgm.mp3');
+        if (this.config.musicEnabled) {
+            window.ABTWSoundManager.playBGM();
+        }
+
         // Pass config to game
         const gameConfig = {
             ...this.config,
@@ -264,6 +277,7 @@ class WizardManager {
             difficulty: 'normal',
             wordType: 'mezclado',
             soundEnabled: true,
+            musicEnabled: true,
             roundsToWin: 5
         };
         this.initDefaultTeams();

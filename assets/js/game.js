@@ -98,6 +98,11 @@ class GameManager {
         this.selectRandomWord();
         this.renderGame();
         this.createKeyboard();
+        
+        // Play BGM when round starts
+        if (this.config.musicEnabled) {
+            window.ABTWSoundManager.playBGM();
+        }
     }
 
     selectRandomWord() {
@@ -266,7 +271,7 @@ class GameManager {
             // Load SVG if not cached
             if (!this.svgCache[style]) {
                 try {
-                    const response = await fetch(`${ABTW.pluginUrl}assets/images/${svgFile}`);
+                    const response = await fetch(`${ABTW.pluginUrl}assets/images/${svgFile}?v=${Date.now()}`);
                     this.svgCache[style] = await response.text();
                 } catch (error) {
                     console.error('Error loading SVG:', error);
@@ -400,6 +405,9 @@ class GameManager {
             nextTurn.textContent = 'Siguiente ronda';
         }
 
+        // Stop BGM on result screen
+        window.ABTWSoundManager.stopBGM();
+        
         // Switch screens
         document.getElementById('abtw-game')?.classList.remove('active');
         document.getElementById('abtw-result')?.classList.add('active');
@@ -446,6 +454,9 @@ class GameManager {
                 </div>
             `).join('');
 
+        // Stop BGM on winner screen
+        window.ABTWSoundManager.stopBGM();
+        
         document.getElementById('abtw-result')?.classList.remove('active');
         document.getElementById('abtw-winner')?.classList.add('active');
     }
@@ -472,6 +483,9 @@ class GameManager {
     restartGame() {
         window.ABTWSoundManager.playClick();
         
+        // Stop BGM when exiting to wizard
+        window.ABTWSoundManager.stopBGM();
+        
         // Remove active from all screens
         document.querySelectorAll('.abtw-screen').forEach(screen => {
             screen.classList.remove('active');
@@ -486,6 +500,9 @@ class GameManager {
     }
 
     exitGame() {
+        // Stop BGM when exiting
+        window.ABTWSoundManager.stopBGM();
+        
         document.querySelectorAll('.abtw-screen').forEach(screen => {
             screen.classList.remove('active');
         });

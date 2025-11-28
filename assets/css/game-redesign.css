@@ -145,6 +145,23 @@ body, html {
     aspect-ratio: 1/1;
     max-height: 400px;
     font-size: clamp(5rem, 15vmin, 15rem);
+    position: relative;
+    overflow: hidden;
+}
+
+.abtw-hangman svg {
+    width: 100% !important;
+    height: 100% !important;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+    filter: drop-shadow(0 0 5px rgba(255,255,255,0.2));
+}
+
+[data-theme="cyberpunk"] .abtw-hangman svg,
+[data-theme="retro"] .abtw-hangman svg,
+[data-theme="matrix"] .abtw-hangman svg {
+    filter: drop-shadow(0 0 10px var(--color-primary)) drop-shadow(0 0 20px var(--color-secondary));
 }
 
 /* ============================================

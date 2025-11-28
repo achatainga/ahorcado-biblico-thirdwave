@@ -22,11 +22,9 @@
     <rect x="195" y="50" width="5" height="30" fill="#DAA520"/>
   </g>
   
-  <!-- Stage 5: Head -->
+  <!-- Stage 5: Head (Empty) -->
   <g id="stage-5" style="display: none;">
     <circle cx="197" cy="105" r="25" fill="#FFE4C4" stroke="#000" stroke-width="2"/>
-    <circle cx="190" cy="100" r="3" fill="#000"/>
-    <circle cx="204" cy="100" r="3" fill="#000"/>
   </g>
   
   <!-- Stage 6: Body -->
