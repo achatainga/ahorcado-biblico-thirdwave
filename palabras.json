@@ -1,0 +1,111 @@
+{
+  "muy_facil": {
+    "personas": [
+      { "palabra": "NOÉ", "pista": "Construyó el arca" },
+      { "palabra": "EVA", "pista": "Primera mujer" },
+      { "palabra": "JOB", "pista": "Hombre paciente que sufrió" },
+      { "palabra": "RUTH", "pista": "Suegra de Noemí" },
+      { "palabra": "SARA", "pista": "Esposa de Abraham" },
+      { "palabra": "ABEL", "pista": "Hermano de Caín" }
+    ],
+    "libros": [
+      { "palabra": "JUAN", "pista": "Evangelio del amor" },
+      { "palabra": "JOEL", "pista": "Profeta menor" },
+      { "palabra": "AMOS", "pista": "Profeta pastor" },
+      { "palabra": "JONÁS", "pista": "Tragado por un pez" }
+    ],
+    "conceptos": [
+      { "palabra": "FE", "pista": "Certeza de lo que se espera" },
+      { "palabra": "AMOR", "pista": "Dios es esto" },
+      { "palabra": "PAZ", "pista": "Fruto del Espíritu" },
+      { "palabra": "CRUZ", "pista": "Donde murió Jesús" },
+      { "palabra": "DIOS", "pista": "Creador del universo" },
+      { "palabra": "LUZ", "pista": "Jesús es la del mundo" }
+    ]
+  },
+  "facil": {
+    "personas": [
+      { "palabra": "MOISÉS", "pista": "Libertó a Israel de Egipto" },
+      { "palabra": "DAVID", "pista": "Venció a Goliat" },
+      { "palabra": "MARÍA", "pista": "Madre de Jesús" },
+      { "palabra": "PEDRO", "pista": "Pescador, apóstol de Jesús" },
+      { "palabra": "PABLO", "pista": "Apóstol a los gentiles" },
+      { "palabra": "ISAAC", "pista": "Hijo de Abraham" }
+    ],
+    "libros": [
+      { "palabra": "LUCAS", "pista": "Evangelio del médico" },
+      { "palabra": "MARCOS", "pista": "Evangelio más corto" },
+      { "palabra": "ESTER", "pista": "Reina que salvó a su pueblo" },
+      { "palabra": "DANIEL", "pista": "En el foso de los leones" },
+      { "palabra": "JOSUÉ", "pista": "Conquistó Jericó" }
+    ],
+    "conceptos": [
+      { "palabra": "GRACIA", "pista": "Favor inmerecido de Dios" },
+      { "palabra": "CIELO", "pista": "Hogar eterno con Dios" },
+      { "palabra": "VERDAD", "pista": "Jesús es el camino y la" },
+      { "palabra": "GOZO", "pista": "Alegría del Señor" },
+      { "palabra": "VIDA", "pista": "Jesús vino para dar" }
+    ]
+  },
+  "normal": {
+    "personas": [
+      { "palabra": "ABRAHAM", "pista": "Padre de la fe" },
+      { "palabra": "SALOMÓN", "pista": "Rey sabio de Israel" },
+      { "palabra": "EZEQUIEL", "pista": "Profeta de los huesos secos" },
+      { "palabra": "JEREMÍAS", "pista": "Profeta llorón" },
+      { "palabra": "TIMOTEO", "pista": "Discípulo joven de Pablo" }
+    ],
+    "libros": [
+      { "palabra": "GÉNESIS", "pista": "Primer libro de la Biblia" },
+      { "palabra": "ÉXODO", "pista": "Salida de Egipto" },
+      { "palabra": "ROMANOS", "pista": "Carta sobre la justificación" },
+      { "palabra": "GÁLATAS", "pista": "Libertad en Cristo" },
+      { "palabra": "HEBREOS", "pista": "Jesús es superior" }
+    ],
+    "conceptos": [
+      { "palabra": "ORACIÓN", "pista": "Comunicación con Dios" },
+      { "palabra": "BIBLIA", "pista": "Palabra de Dios escrita" },
+      { "palabra": "ESPÍRITU", "pista": "Tercera persona de la Trinidad" },
+      { "palabra": "PERDÓN", "pista": "Cancelación de la deuda" },
+      { "palabra": "PROMESA", "pista": "Dios cumple sus" }
+    ]
+  },
+  "dificil": {
+    "personas": [
+      { "palabra": "NABUCODONOSOR", "pista": "Rey de Babilonia" },
+      { "palabra": "MELQUISEDEC", "pista": "Rey y sacerdote de Salem" },
+      { "palabra": "BARTOLOMÉ", "pista": "Apóstol también llamado Natanael" },
+      { "palabra": "NICODEMO", "pista": "Fariseo que visitó a Jesús de noche" }
+    ],
+    "libros": [
+      { "palabra": "LEVÍTICO", "pista": "Leyes de los sacerdotes" },
+      { "palabra": "DEUTERONOMIO", "pista": "Segunda ley" },
+      { "palabra": "FILIPENSES", "pista": "Carta del gozo" },
+      { "palabra": "COLOSENSES", "pista": "Supremacía de Cristo" }
+    ],
+    "conceptos": [
+      { "palabra": "SALVACIÓN", "pista": "Liberación del pecado" },
+      { "palabra": "BENDICIÓN", "pista": "Favor de Dios sobre tu vida" },
+      { "palabra": "REDENCIÓN", "pista": "Comprados por precio" },
+      { "palabra": "SANTIDAD", "pista": "Apartados para Dios" }
+    ]
+  },
+  "extremo": {
+    "personas": [
+      { "palabra": "NABUCODONOSOR", "pista": "Rey que se volvió bestia" },
+      { "palabra": "MELQUISEDEC", "pista": "Sin padre ni madre" },
+      { "palabra": "MARDOQUEO", "pista": "Tío de Ester" }
+    ],
+    "libros": [
+      { "palabra": "DEUTERONOMIO", "pista": "Quinto libro de Moisés" },
+      { "palabra": "APOCALIPSIS", "pista": "Revelación de Jesucristo" },
+      { "palabra": "CORINTIOS", "pista": "Pablo escribió dos cartas a esta iglesia" }
+    ],
+    "conceptos": [
+      { "palabra": "ARREPENTIMIENTO", "pista": "Cambio de mente y corazón" },
+      { "palabra": "RECONCILIACIÓN", "pista": "Restauración de la relación con Dios" },
+      { "palabra": "SANTIFICACIÓN", "pista": "Proceso de ser más como Cristo" },
+      { "palabra": "RESURRECCIÓN", "pista": "Jesús venció la muerte" }
+    ]
+  }
+}

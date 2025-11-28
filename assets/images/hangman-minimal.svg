@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" id="hangman-minimal">
+  <!-- Stage 0: Empty -->
+  <g id="stage-0" style="display: none;"></g>
+  
+  <!-- Stage 1: Base -->
+  <g id="stage-1" style="display: none;">
+    <line x1="30" y1="380" x2="170" y2="380" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Stage 2: Vertical Pole -->
+  <g id="stage-2" style="display: none;">
+    <line x1="60" y1="380" x2="60" y2="50" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Stage 3: Horizontal Beam -->
+  <g id="stage-3" style="display: none;">
+    <line x1="60" y1="50" x2="190" y2="50" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Stage 4: Rope -->
+  <g id="stage-4" style="display: none;">
+    <line x1="190" y1="50" x2="190" y2="90" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Stage 5: Head -->
+  <g id="stage-5" style="display: none;">
+    <circle cx="190" cy="115" r="25" fill="none" stroke="#ffffff" stroke-width="5"/>
+  </g>
+  
+  <!-- Stage 6: Body -->
+  <g id="stage-6" style="display: none;">
+    <line x1="190" y1="140" x2="190" y2="230" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Stage 7: Arms -->
+  <g id="stage-7" style="display: none;">
+    <line x1="190" y1="165" x2="155" y2="195" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+    <line x1="190" y1="165" x2="225" y2="195" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Stage 8: Legs (Final) -->
+  <g id="stage-8" style="display: none;">
+    <line x1="190" y1="230" x2="160" y2="280" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+    <line x1="190" y1="230" x2="220" y2="280" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>

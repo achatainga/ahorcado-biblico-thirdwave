@@ -1,0 +1,111 @@
+/* Theme System - Ahorcado Bíblico Third Wave */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Default Theme (Fallback) */
+.abtw-container {
+    --color-primary: #00F5FF;
+    --color-secondary: #FF1493;
+    --color-accent: #39FF14;
+    --color-wave: #9D00FF;
+    --color-bg-dark: #0a0014;
+    --color-bg-card: #1a0a2e;
+    --color-text: #ffffff;
+    --color-text-dim: #888888;
+    --font-family: 'Press Start 2P', cursive;
+    --border-radius: 20px;
+    --border-width: 4px;
+}
+
+/* Theme 1: Cyberpunk (Default) */
+[data-theme="cyberpunk"] {
+    --color-primary: #00F5FF;
+    --color-secondary: #FF1493;
+    --color-accent: #39FF14;
+    --color-wave: #9D00FF;
+    --color-bg-dark: #0a0014;
+    --color-bg-card: #1a0a2e;
+    --color-text: #ffffff;
+    --color-text-dim: #888888;
+    --font-family: 'Press Start 2P', cursive;
+    --border-radius: 20px;
+    --border-width: 4px;
+}
+
+/* Theme 2: Retro Wave */
+[data-theme="retro"] {
+    --color-primary: #FF6EC7;
+    --color-secondary: #FFD93D;
+    --color-accent: #6BCF7F;
+    --color-wave: #9D4EDD;
+    --color-bg-dark: #1a0033;
+    --color-bg-card: #2d0052;
+    --color-text: #ffffff;
+    --color-text-dim: #999999;
+    --font-family: 'Press Start 2P', cursive;
+    --border-radius: 15px;
+    --border-width: 3px;
+}
+
+/* Theme 3: Minimal */
+[data-theme="minimal"] {
+    --color-primary: #2563eb;
+    --color-secondary: #7c3aed;
+    --color-accent: #06b6d4;
+    --color-wave: #8b5cf6;
+    --color-bg-dark: #0f172a;
+    --color-bg-card: #1e293b;
+    --color-text: #f1f5f9;
+    --color-text-dim: #64748b;
+    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --border-radius: 12px;
+    --border-width: 2px;
+}
+
+/* Theme 4: Dark Mode */
+[data-theme="dark"] {
+    --color-primary: #60a5fa;
+    --color-secondary: #a78bfa;
+    --color-accent: #34d399;
+    --color-wave: #818cf8;
+    --color-bg-dark: #000000;
+    --color-bg-card: #111111;
+    --color-text: #ffffff;
+    --color-text-dim: #6b7280;
+    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --border-radius: 16px;
+    --border-width: 1px;
+}
+
+/* Theme 5: Pastel */
+[data-theme="pastel"] {
+    --color-primary: #a78bfa;
+    --color-secondary: #f9a8d4;
+    --color-accent: #86efac;
+    --color-wave: #c4b5fd;
+    --color-bg-dark: #faf5ff;
+    --color-bg-card: #f3e8ff;
+    --color-text: #1f2937;
+    --color-text-dim: #9ca3af;
+    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --border-radius: 20px;
+    --border-width: 2px;
+}
+
+[data-theme="pastel"] .abtw-container {
+    background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+}
+
+/* Theme 6: Matrix */
+[data-theme="matrix"] {
+    --color-primary: #00FF00;
+    --color-secondary: #39FF14;
+    --color-accent: #7FFF00;
+    --color-wave: #00CC00;
+    --color-bg-dark: #000000;
+    --color-bg-card: #0a0a0a;
+    --color-text: #00FF00;
+    --color-text-dim: #006600;
+    --font-family: 'Courier New', monospace;
+    --border-radius: 8px;
+    --border-width: 2px;
+}

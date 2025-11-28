@@ -1,0 +1,98 @@
+/* Toast Notifications */
+.abtw-toast {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) scale(0) !important;
+    background: #1a1a1a !important;
+    border: 3px solid #00F5FF !important;
+    border-radius: 15px !important;
+    padding: 2rem 3rem !important;
+    z-index: 1000000 !important;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.8) !important;
+    text-align: center !important;
+    max-width: 500px !important;
+    min-width: 400px !important;
+    animation: toastIn 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards !important;
+    pointer-events: auto !important;
+}
+
+@keyframes toastIn {
+    to { transform: translate(-50%, -50%) scale(1); }
+}
+
+.abtw-toast.closing {
+    animation: toastOut 0.3s ease-in forwards;
+}
+
+@keyframes toastOut {
+    to { transform: translate(-50%, -50%) scale(0); opacity: 0; }
+}
+
+.abtw-toast-title {
+    font-size: 1.2rem !important;
+    color: #00F5FF !important;
+    margin-bottom: 1rem !important;
+    font-weight: bold !important;
+    font-family: 'Press Start 2P', cursive !important;
+}
+
+.abtw-toast-message {
+    font-size: 0.8rem !important;
+    color: #ffffff !important;
+    margin-bottom: 1.5rem !important;
+    line-height: 1.6 !important;
+    font-family: 'Press Start 2P', cursive !important;
+}
+
+.abtw-toast-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.abtw-toast-btn {
+    padding: 0.8rem 1.5rem !important;
+    border: 2px solid #00F5FF !important;
+    border-radius: 8px !important;
+    background: #0a0a0a !important;
+    color: #00F5FF !important;
+    font-family: 'Press Start 2P', cursive !important;
+    font-size: 0.7rem !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+}
+
+.abtw-toast-btn:hover {
+    background: #00F5FF !important;
+    color: #0a0a0a !important;
+    transform: translateY(-2px) !important;
+}
+
+.abtw-toast-btn.primary {
+    background: #00F5FF !important;
+    border-color: #00F5FF !important;
+    color: #0a0a0a !important;
+}
+
+.abtw-toast-btn.primary:hover {
+    box-shadow: 0 5px 30px rgba(0, 245, 255, 0.6) !important;
+    transform: translateY(-3px) !important;
+}
+
+.abtw-toast-overlay {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background: rgba(0, 0, 0, 0.9) !important;
+    z-index: 999999 !important;
+    animation: fadeIn 0.3s ease-in !important;
+    pointer-events: auto !important;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
